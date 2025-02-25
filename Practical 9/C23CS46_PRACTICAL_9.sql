@@ -24,13 +24,12 @@ CREATE TABLE Customer1 (
 );
 
 -- Inserting Data into Customer1 Table
-INSERT INTO Customer1 (Cnum, Cname, City, Rating, Snum) VALUES 
-(2001, 'Hoffman', 'London', 100, 1001),
-(2002, 'Giovance', 'Rome', 200, 1003),
-(2003, 'Liu', 'San Jose', 300, 1002),
-(2004, 'Grass', 'Berlin', 100, 1002),
-(2006, 'Clemens', 'London', 300, 1005),
-(2007, 'Pereira', 'Rome', 100, 1004);
+INSERT INTO Customer1 (Cnum, Cname, City, Rating, Snum) VALUES (2001, 'Hoffman', 'London', 100, 1001);
+INSERT INTO Customer1 (Cnum, Cname, City, Rating, Snum) VALUES (2002, 'Giovance', 'Rome', 200, 1003);
+INSERT INTO Customer1 (Cnum, Cname, City, Rating, Snum) VALUES (2003, 'Liu', 'San Jose', 300, 1002);
+INSERT INTO Customer1 (Cnum, Cname, City, Rating, Snum) VALUES (2004, 'Grass', 'Berlin', 100, 1002);
+INSERT INTO Customer1 (Cnum, Cname, City, Rating, Snum) VALUES (2006, 'Clemens', 'London', 300, 1005);
+INSERT INTO Customer1 (Cnum, Cname, City, Rating, Snum) VALUES (2007, 'Pereira', 'Rome', 100, 1004);
 
 -- Creating Order_T Table
 CREATE TABLE Order_T (
@@ -44,17 +43,17 @@ CREATE TABLE Order_T (
 );
 
 -- Inserting Data into Order_T Table
-INSERT INTO Order_T (Order_no, Amount, Odate, Cnum, Snum) VALUES 
-(3001, 18.96, '1994-03-10', 2002, 1002),
-(3002, 1900.10, '1994-03-10', 2007, 1003),
-(3003, 767.19, '1994-03-10', 2001, 1001),
-(3005, 5160.45, '1994-03-10', 2003, 1002),
-(3006, 1098.16, '1994-03-10', 2008, 1002),
-(3007, 75.75, '1994-04-10', 2001, 1001),
-(3008, 4723.95, '1994-05-10', 2006, 1002),
-(3009, 1713.23, '1994-04-10', 2002, 1003),
-(3010, 1309.95, '1994-06-10', 2004, 1002),
-(3011, 9891.00, '1994-06-10', 2006, 1001);
+ 
+INSERT INTO Order_T (Order_no, Amount, Odate, Cnum, Snum) VALUES (3001, 18.96, TO_DATE('1994-03-10', 'YYYY-MM-DD'), 2002, 1002);
+INSERT INTO Order_T (Order_no, Amount, Odate, Cnum, Snum) VALUES (3002, 1900.10, TO_DATE('1994-03-10', 'YYYY-MM-DD'), 2007, 1003);
+INSERT INTO Order_T (Order_no, Amount, Odate, Cnum, Snum) VALUES (3003, 767.19, TO_DATE('1994-03-10', 'YYYY-MM-DD'), 2001, 1001);
+INSERT INTO Order_T (Order_no, Amount, Odate, Cnum, Snum) VALUES (3005, 5160.45, TO_DATE('1994-03-10', 'YYYY-MM-DD'), 2003, 1002);
+INSERT INTO Order_T (Order_no, Amount, Odate, Cnum, Snum) VALUES (3006, 1098.16, TO_DATE('1994-03-10', 'YYYY-MM-DD'), 2008, 1002);
+INSERT INTO Order_T (Order_no, Amount, Odate, Cnum, Snum) VALUES (3007, 75.75, TO_DATE('1994-04-10', 'YYYY-MM-DD'), 2001, 1001);
+INSERT INTO Order_T (Order_no, Amount, Odate, Cnum, Snum) VALUES (3008, 4723.95, TO_DATE('1994-05-10', 'YYYY-MM-DD'), 2006, 1002);
+INSERT INTO Order_T (Order_no, Amount, Odate, Cnum, Snum) VALUES (3009, 1713.23, TO_DATE('1994-04-10', 'YYYY-MM-DD'), 2002, 1003);
+INSERT INTO Order_T (Order_no, Amount, Odate, Cnum, Snum) VALUES (3010, 1309.95, TO_DATE('1994-06-10', 'YYYY-MM-DD'), 2004, 1002);
+INSERT INTO Order_T (Order_no, Amount, Odate, Cnum, Snum) VALUES (3011, 9891.00, TO_DATE('1994-06-10', 'YYYY-MM-DD'), 2006, 1001);
 
 -- Task Queries
 -- 1. Customers handled by salespeople named Peel or Motika
